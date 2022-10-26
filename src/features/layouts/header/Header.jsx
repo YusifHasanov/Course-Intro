@@ -8,7 +8,7 @@ const Header = () => {
     https://wa.me/2348160000000
     return (
         <div className={styles.header}>
-            <h1>Slikon vadisində React developer
+            <h1>Silikon vadisində React developer
                 <img src={headerLine} alt=""/>
             </h1>
             <div className={styles.buttons}>
