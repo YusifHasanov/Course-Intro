@@ -5,17 +5,17 @@ import downArrow from './../../assets/downArrow.png';
 import {BsArrowRight} from "react-icons/bs";
 import vector from "../../assets/vector.png";
 const Header = () => {
-    https://wa.me/2348160000000
+
     return (
-        <div className={styles.header}>
-            <h1>Silikon vadisində React developer
+        <div id={"header"} className={styles.header}>
+            <h1>Silikon vadisində React developer all
                 <img src={headerLine} alt=""/>
             </h1>
             <div className={styles.buttons}>
                 <button className={styles.discover}>Kurslar</button>
                 <button className={styles.applyGrant}>Əlaqə <BsArrowRight className={styles.rightArrow}/></button>
             </div>
-            <div className={styles.millions}>
+            <div className={styles.millions} id={"teleblerimiz"}>
                 <div>
                     <p>25+</p>
                     <p>Real layihə</p>
@@ -31,9 +31,9 @@ const Header = () => {
             </div>
             <div className={styles.last}>
                 <img src={downArrow} alt=""/>
-                <div className={styles.text}>
+                <div  className={styles.text}>
                     <h3>Tələblərimiz</h3>
-                    <p>Hər bir tələbə kurs müddətincə maksimum 3 dərs dərsdən qala bilər.</p>
+                    <p>Kurs tələb və qaydalarına riayət etməyən tələbələr kursdan kənarlaşdırılacaqdır.</p>
                     <a href="#">
                         Haqqımızda
                         <img className={styles.rightArrow} src={vector} alt=""/>

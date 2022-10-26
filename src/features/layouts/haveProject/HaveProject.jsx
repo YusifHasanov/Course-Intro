@@ -5,9 +5,9 @@ const HaveProject = () => {
     return (
         <>
             <div className='project'>
-                <p>Have a project in mind?</p>
-                <h2>Let’s create something awesome.</h2>
-                <button>Apply for Grant
+                <p>Tərəddüd edirsən?</p>
+                <h2>Qeydiyyatdan keç və səndə ailəmizə qoşul.</h2>
+                <button>Əlaqə
                     <img className={"project-arrow"} src={arrow} alt=""/>
                 </button>
             </div>

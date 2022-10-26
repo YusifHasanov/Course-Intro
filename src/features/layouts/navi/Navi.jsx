@@ -3,16 +3,16 @@ import styles from './navi.module.css';
 
 const Navi = () => {
     return (
-        <div className={styles.navContainer}>
-            <div className={styles.navIconDiv}>Icon</div>
+        <div id={"nav"} className={styles.navContainer}>
+            <div className={styles.navIconDiv}>
+            </div>
+            <div></div>
            <div className={styles.navRight}>
                <ul className={styles.navList}>
-                   <li>Home</li>
-                   <li>About</li>
-                   <li>Diayvi</li>
-                   <li>About</li>
-                   <li>Diayvi</li>
-                   <li>Blog</li>
+                   <li><a href={"#header"}>Ana shifə</a></li>
+                   <li><a href="#teleblerimiz">Tələblər</a></li>
+                   <li><a href="#dersler">Dersler</a></li>
+                   <li><a href="#questions">Suallar</a></li>
                </ul>
                <button className={styles.applyBtn}>Apply for grant</button>
            </div>

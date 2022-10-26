@@ -9,7 +9,7 @@ import
         VisuallyHidden,
     } from '@chakra-ui/react';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
-import styles from './footer.module.css';
+
 
 const Logo = () =>
 {

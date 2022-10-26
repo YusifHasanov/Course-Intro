@@ -28,7 +28,7 @@ const courses = [
 
 const WhatsNew = () => {
     return (
-        <div className={styles.whatsNew}>
+        <div className={styles.whatsNew} id={"dersler"}>
             <div className={styles.header} style={{backgroundImage: grid}}>
                 <h3>Tədris sahələri</h3>
                 <p> Web proqramlaştırmanın hər sahəsi üzrlə dərslər!
@@ -38,7 +38,7 @@ const WhatsNew = () => {
                     <img className={styles.rightArrow} src={vector} alt=""/>
                 </a>
             </div>
-            <div className={styles.boxes}>
+            <div className={styles.boxes} >
                 <div className={styles.content}>
                     {courses.map((course, index) => (
                         <div className={styles.box}>

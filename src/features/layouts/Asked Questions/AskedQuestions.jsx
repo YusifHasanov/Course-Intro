@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './asked.module.css';
-import vector from './../../assets/vector.png'
+
 import {Collapse, useDisclosure} from "@chakra-ui/react";
 import {AiOutlinePlus} from "react-icons/ai";
 
@@ -12,7 +12,7 @@ const AskedQuestions = () => {
     const {isOpen: increaseChance, onToggle: increaseChanceToggle} = useDisclosure();
 
     return (
-        <div className={styles.askedQuestions}>
+        <div className={styles.askedQuestions} id={"questions"}>
             <div className={styles.title}>
                 <h4>Ən çox verilən suallar</h4>
                 <p className={styles.subtitle}>
@@ -37,6 +37,17 @@ const AskedQuestions = () => {
                     </>
                     <>
                         <div className={styles.question}>
+                            Turing qeydiyyatı nədir?
+                            <AiOutlinePlus className={styles.plus} onClick={increaseChanceToggle}/>
+                        </div>
+                        <Collapse in={increaseChance}>
+                            <div className={styles.collapse}>
+                                Turing qeydiyyatı dünya standartlarına uyğun olaraq hazırlanmışdır. Bu qeydiyyatı tamamlayan programçı asanlıqla Avropa və Amerika şirkətlərindən iş təklifləri ala bilər.
+                            </div>
+                        </Collapse>
+                    </>
+                    <>
+                        <div className={styles.question}>
                             Dərslər hansı şəkildə keçirilir?
                             <AiOutlinePlus className={styles.plus} onClick={personCompanyToggle}/>
                         </div>
@@ -49,22 +60,16 @@ const AskedQuestions = () => {
                     </>
                     <>
                         <div className={styles.question}>
-                            How will I be compensated?
+                            İgilis dili bilmək vacibdir?
                             <AiOutlinePlus className={styles.plus} onClick={compensatedToggle}/>
                         </div>
                         <Collapse in={compensated}>
-                            <div className={styles.collapse}>sdasdasdasdas</div>
+                            <div className={styles.collapse}>
+                                Heç bir dil bilgisi olmadanda programçı oluna bilər. Texniki ingilis dili biliyi olması isə sizin xeyrinizə olacaqdır.
+                            </div>
                         </Collapse>
                     </>
-                    <>
-                        <div className={styles.question}>
-                            How can I increase my chances of getting funded?
-                            <AiOutlinePlus className={styles.plus} onClick={increaseChanceToggle}/>
-                        </div>
-                        <Collapse in={increaseChance}>
-                            <div className={styles.collapse}>sdasdasdasdas</div>
-                        </Collapse>
-                    </>
+
                 </div>
             </div>
         </div>

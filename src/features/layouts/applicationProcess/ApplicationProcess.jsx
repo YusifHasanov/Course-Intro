@@ -10,11 +10,12 @@ const ApplicationProcess = () => {
             <div className='appProcess'>
                 <div>
                     <div className='appTitle'>
-                        <h2>Application process</h2>
+                        <h2>Uğur hekayəsi</h2>
                         <img src={trace} alt="" />
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</p>
+                    <p>
+                        Kurs boyunca keçəcəyiniz bütün dərs və təlimlərə əsasən sizə ən yaxşı işlər təklif ediləcək.
+                    </p>
                 </div>
 
                 <div className='appCards'>

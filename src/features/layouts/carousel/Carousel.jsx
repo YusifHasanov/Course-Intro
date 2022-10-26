@@ -23,13 +23,7 @@ const carouselData = [
         price: 'Funding amount: $5,000 - $6,000',
         content: 'Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.'
 
-    },{
-        subtitle: 'Crowdfund',
-        title: 'Funding rates page',
-        price: 'Funding amount: $5,000 - $6,000',
-        content: 'Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.'
-
-    },
+    }
 ]
 const MyCarousel = () => {
     return (
