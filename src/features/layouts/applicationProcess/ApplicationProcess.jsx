@@ -1,0 +1,53 @@
+import React from 'react';
+import trace from './../../assets/Trace.png'
+import RightArrow from  "./../../assets/ArrowRight.png"
+import LeftArrow from  './../../assets/ArrowLeft.png'
+
+
+const ApplicationProcess = () => {
+    return (
+        <>
+            <div className='appProcess'>
+                <div>
+                    <div className='appTitle'>
+                        <h2>Application process</h2>
+                        <img src={trace} alt="" />
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</p>
+                </div>
+
+                <div className='appCards'>
+                    <div>
+                        <h1>1</h1>
+                        <h3>Qeydiyyat.</h3>
+                        <p>
+                                Qeyd olunan bölmələrdən birinə bas vuraraq qeydiyyat mərhələsindən keç və Slikon vadisinə gedən yolun ilk addımını at
+                        </p>
+                        <img src={RightArrow} alt="" />
+                    </div>
+                    <div>
+                        <h1>2</h1>
+                        <h3>Öyrənmə müddəti.</h3>
+                        <p>
+                            Kursu tələblərə uyğun bir şəkildə müvəfəqiyyətlə bitir.
+                        </p>
+                    </div>
+                    <div>
+                        <h1>3</h1>
+                        <h3>Xəyalların artıq gerçəkdir!</h3>
+                        <p>
+                            Əldə etdiyin biliklərlə Turing qeydiyyatını tamamla və Amerika və Avropda işləyə biləcəyin şirkətlərə başvur.
+                        </p>
+                        <img src={LeftArrow} alt="" />
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default ApplicationProcess
+
+
+

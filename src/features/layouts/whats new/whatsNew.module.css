@@ -1,0 +1,108 @@
+.whatsNew {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-image: url(./../../assets/whatsNewGrid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header > h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.header > p {
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.header > a {
+    color: #6966FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightArrow {
+    height: 20px;
+    margin-left: 10px;
+}
+
+.boxes {
+    width: 100%;
+    padding-right: calc((100% - 1200px) / 2);
+    padding-left: calc((100% - 1200px) / 2);
+}
+
+.boxes > .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding-top: 35px;
+
+}
+
+/*.content > .box:nth-child(1) {*/
+/*    margin-left: auto;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+/*.content > .box:nth-child(2) {*/
+/*    margin-right: auto;*/
+/*    margin-left: 20px;*/
+/*}*/
+
+.box {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #393953;
+border-radius: 16px;
+transition: all .3s ease;
+}
+.box:hover{
+    transform: scale(1.05);
+}
+.boxContent{
+    padding:15px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.boxTitle {
+    background-image: url(./../../assets/roundDiv.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    font-size: 30px;
+    border: 4px solid #5654E1;
+    border-radius: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+.subtitle{
+    font-weight: 100;
+}
+.text{
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    word-spacing:-5px;
+}

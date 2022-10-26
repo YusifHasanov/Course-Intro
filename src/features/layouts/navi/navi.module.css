@@ -1,0 +1,45 @@
+.navContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C1C28;
+    padding: 17px 30px;
+    position: sticky;
+    z-index: 445;
+    top: 0;
+    box-shadow: 0 15px 10px -15px #111;
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navList > li {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.applyBtn {
+    background-color: #6966FF;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-right: 10px;
+}
+
+.applyBtn:hover {
+    background-color: #4140ab;
+}

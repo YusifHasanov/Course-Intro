@@ -1,0 +1,41 @@
+.carouselContainer{
+    width: 100%;
+    padding: 50px;
+}
+.carouselItem{
+display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 75%;
+    background-color: #393953;
+    padding: 20px;
+    border-radius: 16px;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subtitle{
+    font-size: 15px;
+    font-weight: 400;
+    color:#A59EBA;
+    margin-bottom: 10px;
+
+}
+.title{
+    font-weight: 700;
+    font-size: 22px;
+    color:#FFF;
+    margin-bottom: 10px;
+}
+.price{
+    color:#A59EBA;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.content{
+    font-weight: 450;
+    font-size: 12px;
+    color:#FFF;
+}
