@@ -9,10 +9,10 @@ const Navi = () => {
             <div></div>
            <div className={styles.navRight}>
                <ul className={styles.navList}>
-                   <li><a href={"#header"}>Ana shifə</a></li>
-                   <li><a href="#teleblerimiz">Tələblər</a></li>
-                   <li><a href="#dersler">Dersler</a></li>
-                   <li><a href="#questions">Suallar</a></li>
+                   <li><a rel={"nofollow"} href={"#header"}>Ana shifə</a></li>
+                   <li><a rel={"nofollow"} href="#teleblerimiz">Tələblər</a></li>
+                   <li><a rel={"nofollow"} href="#dersler">Dersler</a></li>
+                   <li><a rel={"nofollow"} href="#questions">Suallar</a></li>
                </ul>
                <button className={styles.applyBtn}>Əlaqə</button>
            </div>

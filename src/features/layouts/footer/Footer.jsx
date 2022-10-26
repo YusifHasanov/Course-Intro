@@ -1,12 +1,10 @@
 import
 {
     Box,
-    chakra,
     Container,
     Stack,
     Text,
     useColorModeValue,
-    VisuallyHidden,
 } from '@chakra-ui/react';
 import {FaFacebookF} from 'react-icons/fa';
 
@@ -31,12 +29,12 @@ const Footer = () => {
                 <div className={styles.footerImage}></div>
                 <Text>© 2022 course-content beta version</Text>
                 <div className={styles.socials}>
-                    <a className={styles.socialLink} target={"_blank"}
+                    <a rel={"nofollow"} className={styles.socialLink} target={"_blank"}
                        href="https://www.instagram.com/rahmaniftaliyev/"><AiFillInstagram
                         className={styles.socialIcon}/></a>
-                    <a className={styles.socialLink} target={"_blank"}
+                    <a rel={"nofollow"} className={styles.socialLink} target={"_blank"}
                        href="https://www.facebook.com/rahmaniftaliyev"><FaFacebookF className={styles.socialIcon}/></a>
-                    <a className={styles.socialLink} target={"_blank"}
+                    <a rel={"nofollow"} className={styles.socialLink} target={"_blank"}
                        href="https://github.com/RahmaNiftaliyev"><AiFillGithub className={styles.socialIcon}/></a>
                 </div>
             </Container>
