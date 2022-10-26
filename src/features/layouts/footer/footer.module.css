@@ -1,0 +1,42 @@
+.footerImage {
+    background-image: url(./../../assets/logoOriginal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+
+}
+
+.socialIcon {
+    font-size: 30px;
+    background-color: #151618;
+
+    border-radius: 50%;
+    box-shadow: 1px 6px 15px -3px #000;
+    color: #989899;
+border: none;
+}
+
+.socialLink {
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #151618;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center; border: 1px solid #151618;
+}
+.socialLink:hover{
+
+    box-shadow: 1px 6px 15px -3px #fff;
+    color: #f2f2f2;
+    cursor: pointer;
+    transition: .2s ease;
+}

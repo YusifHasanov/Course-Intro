@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+
+    font-family: 'JetBrains Mono', monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    color: #C8C7D8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.appProcess{
+    /* width: 1112px; */
+    padding: 60px 0;
+    margin: 0 auto;
+    background-color: #1C1C28;
+}
+
+.appProcess > div:first-child{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #1C1C28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.appTitle{
+    position: relative;
+    width:383px ;
+}
+.appTitle > img{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+
+.appTitle > h2{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: #8600e2;
+}
+
+.appProcess > div:first-child > p{
+    text-align: center;
+    color: #C8C7D8;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.appCards{
+    width: 1112px;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.appCards > div{
+    width: 332px;
+    height: 410px;
+    border-radius: 16px;
+
+    background-color: #393953;
+    padding: 20px;
+    position: relative;
+}
+
+.appCards > div > h1{
+    font-size: 64px;
+    color: #fff;
+    line-height: 80px;
+}
+
+.appCards > div > h3{
+    font-size: 24px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.appCards > div > p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 15px;
+}
+.appCards > div:nth-child(2){
+    margin-top: 30px;
+    transform: rotate(8deg);
+}
+
+.appCards > div:first-child > img{
+    position: absolute;
+    right: -70px;
+    top: 20px;
+    z-index: 30;
+}
+
+.appCards > div:last-child > img{
+    position: absolute;
+    bottom: 70px;
+    left: -70px;
+    z-index: 30;
+}
+
+/* !HAVE A PROJECT */
+
+.project{
+    width: 1112px;
+    height: 248px;
+    padding: 40px 0;
+    border-radius: 16px;
+    margin: 55px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(325.79deg, #6966FF 24.5%, rgba(105, 102, 255, 0.36) 117.69%);
+
+}
+
+.project > p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.project > h2{
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.project > button{
+    margin-top: 30px;
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 12px 16px;
+    border: none;
+    color: #4D4BB1;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    transition: all .4s ease;
+}
+.project > button:hover{
+    background-color: #4D4BB1;
+    color: #fff;
+}
+.project > button>.project-arrow{
+    margin-left: 10px;
+    height: 20px;
+
+}

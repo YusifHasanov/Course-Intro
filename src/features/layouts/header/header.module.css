@@ -1,0 +1,109 @@
+.header {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-image: url(./../../assets/backgroundCube.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+
+/*background-position: center*/
+}
+
+.header > h1 {
+    width: 60%;
+    font-size: 60px;
+    font-weight: 700;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color:#d74df6;
+}
+
+.header > h1 > img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.discover, .applyGrant {
+    padding : 10px 20px;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+
+.applyGrant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discover{
+    background-color: #393953;
+    margin-right: 25px;
+}
+.applyGrant{
+    background-color: #6966FF;
+}
+.applyGrant:hover{
+    background-color: #4140ab;
+}
+.discover:hover{
+    background-color: #29294b;
+}
+.millions   {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px calc((100% - 700px) / 2) 20px calc((100% - 700px) / 2)    ;
+}
+.last{
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+.text{
+    background-image: url(./../../assets/whatsNewGrid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top:35px;
+    padding-bottom:35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text > h3{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.text > p {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.text > a {
+    color: #6966FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightArrow {
+    height: 20px;
+    margin-left: 10px;
+}
