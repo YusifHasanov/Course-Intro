@@ -32,9 +32,9 @@ const WhatsNew = () => {
             <div className={styles.header} style={{backgroundImage: grid}}>
                 <h3>Tədris sahələri</h3>
                 <p> Web proqramlaştırmanın hər sahəsi üzrlə dərslər!
-                    <libero className=""></libero>
+
                 </p>
-                <a href="#">Read more on our blog
+                <a href="https://course-intro.netlify.app/">Read more on our blog
                     <img className={styles.rightArrow} src={vector} alt=""/>
                 </a>
             </div>
