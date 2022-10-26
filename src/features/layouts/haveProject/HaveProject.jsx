@@ -5,7 +5,7 @@ const HaveProject = () => {
     return (
         <>
             <div className='project'>
-                <p>Programlaştırmaya hardan başlayacağını bilmirsən?</p>
+                <p>Tərəddüd edirsən?</p>
                 <h2>Qeydiyyatdan keç və səndə ailəmizə qoşul.</h2>
                 <button>Əlaqə
                     <img className={"project-arrow"} src={arrow} alt=""/>
