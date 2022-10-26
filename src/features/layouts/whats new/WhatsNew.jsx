@@ -41,14 +41,14 @@ const WhatsNew = () => {
             <div className={styles.boxes} >
                 <div className={styles.content}>
                     {courses.map((course, index) => (
-                        <div className={styles.box}>
+                        <div className={styles.box} key={index}>
                             <div className={styles.boxTitle}>
                                 {course.title}
                             </div>
                             <div className={styles.boxContent}>
                                 <div>
                                     <p className={styles.subtitle}>{course.subtitle}</p>
-                                    <p className={styles.text}>{course.text.map(t => (<> {t} <br/></>))}</p>
+                                    <p className={styles.text}>{course.text.map((t,index) => (<div key={index}> {t} <br/></div>))}</p>
                                 </div>
                                 <div className={styles.date}>{course.date}</div>
                             </div>

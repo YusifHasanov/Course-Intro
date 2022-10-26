@@ -29,7 +29,7 @@ const MyCarousel = () => {
 
             {carouselData.map((item, index) => (
 
-                <div className={styles.carouselItem}>
+                <div className={styles.carouselItem} key={index}>
                     <div>
                         <h4 className={styles.title}>{item.title}</h4>
                         <p className={styles.price}>Kurs müddəti: {item.price}</p>
