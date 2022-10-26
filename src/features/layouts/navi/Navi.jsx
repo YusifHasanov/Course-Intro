@@ -14,7 +14,7 @@ const Navi = () => {
                    <li><a href="#dersler">Dersler</a></li>
                    <li><a href="#questions">Suallar</a></li>
                </ul>
-               <button className={styles.applyBtn}>Apply for grant</button>
+               <button className={styles.applyBtn}>Əlaqə</button>
            </div>
         </div>
     );

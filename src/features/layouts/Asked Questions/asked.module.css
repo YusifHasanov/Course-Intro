@@ -12,11 +12,12 @@
     width: 100%;
     padding: 50px;
     text-align: center;
+
 }
 .title > h4{
     font-size: 30px;
     font-weight: 700;
-    color: #fff;
+    color:#5654E1;
     margin-bottom: 30px;
 }
 .subtitle{

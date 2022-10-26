@@ -34,7 +34,7 @@ const Header = () => {
                 <div  className={styles.text}>
                     <h3>Tələblərimiz</h3>
                     <p>Kurs tələb və qaydalarına riayət etməyən tələbələr kursdan kənarlaşdırılacaqdır.</p>
-                    <a href="#">
+                    <a href="https://course-intro.netlify.app/">
                         Haqqımızda
                         <img className={styles.rightArrow} src={vector} alt=""/>
                     </a>
