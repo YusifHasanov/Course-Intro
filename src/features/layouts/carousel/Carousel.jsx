@@ -1,6 +1,4 @@
 import React from 'react';
-
-import 'swiper/css';
 import styles from './carousel.module.css';
 
 const carouselData = [
