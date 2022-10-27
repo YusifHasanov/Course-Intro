@@ -1,23 +1,41 @@
 .carouselContainer {
     width: 100%;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    /*display: grid;*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 20px;
 
 }
-
+.carouselContainer >.carouselItem:last-child{
+    margin-top: 50px;
+}
+.carouselContainer >.carouselItem:nth-child(2){
+    margin-top: 50px;
+}
 .carouselItem {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #393953;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    background: linear-gradient(135deg, rgb(2 1 13 / 40%)50%,#a8b3cf 500%);
     padding: 30px 20px 10px 20px ;
     border-radius: 16px;
     min-height: 350px;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 370px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all .3s ease;
+
+}
+.carouselItem:hover{
+    transform: scale(.98);
+    border-radius: 20px;
+    box-shadow: 0 0 13px 1px rgba(255,255,255,0.3);
 }
 
 .subtitle {
@@ -32,8 +50,9 @@
     font-weight: 700;
     font-size: 22px;
     color: #7b53d7;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     text-align: center;
+
 }
 
 .price {
@@ -49,5 +68,27 @@
     font-weight: 450;
     font-size: 20px;
     margin-top: 7px;
-    color: #FFF;
+    color: #a8b3cf  ;
+}@media screen and (min-width: 400px){
+    .carouselContainer {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+@media screen and (min-width: 570px){
+    .carouselContainer{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+}
+@media screen and (min-width: 940px) {
+    .carouselContainer >.carouselItem:nth-child(2){
+        margin-top:0;
+    }
+}
+@media screen and (min-width: 1210px){
+    .carouselContainer >.carouselItem:last-child{
+        margin-top: 0;
+    }
 }

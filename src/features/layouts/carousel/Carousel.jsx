@@ -20,7 +20,7 @@ const carouselData = [
 
         title: 'Fullstack',
         price: '18 ay',
-        content: ["All of the above","Frontend", "Backend"]
+        content: ["All of the above:","Frontend", "Backend"]
     }
 ]
 const MyCarousel = () => {
@@ -34,8 +34,8 @@ const MyCarousel = () => {
                         <h4 className={styles.title}>{item.title}</h4>
                         <p className={styles.price}>Kurs müddəti: {item.price}</p>
                         <div className={styles.items}>
-                            {item.content.map((i) => (
-                                <p className={styles.content}>
+                            {item.content.map((i,index) => (
+                                <p className={styles.content} key={index}>
                                     {i}
                                 </p>
                             ))}

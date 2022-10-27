@@ -2,14 +2,14 @@ import React from 'react';
 import trace from './../../assets/Trace.png'
 import RightArrow from  "./../../assets/ArrowRight.png"
 import LeftArrow from  './../../assets/ArrowLeft.png'
-
+import styles from './application.module.css';
 
 const ApplicationProcess = () => {
     return (
         <>
-            <div className='appProcess'>
+            <div className={styles.appProcess}>
                 <div>
-                    <div className='appTitle'>
+                    <div className={styles.appTitle}>
                         <h2>Uğur hekayəsi</h2>
                         <img src={trace} alt="" />
                     </div>
@@ -18,7 +18,7 @@ const ApplicationProcess = () => {
                     </p>
                 </div>
 
-                <div className='appCards'>
+                <div className={styles.appCards}>
                     <div>
                         <h1>1</h1>
                         <h3>Qeydiyyat.</h3>
@@ -40,7 +40,7 @@ const ApplicationProcess = () => {
                         <p>
                             Əldə etdiyin biliklərlə Turing qeydiyyatını tamamla və Amerika və Avropda işləyə biləcəyin şirkətlərə başvur.
                         </p>
-                        <img src={LeftArrow} alt="" />
+                        <img src={LeftArrow} alt="left-arrow" />
                     </div>
                 </div>
             </div>

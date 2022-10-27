@@ -34,7 +34,7 @@ const WhatsNew = () => {
                 <p> Web proqramlaştırmanın hər sahəsi üzrlə dərslər!
 
                 </p>
-                <a href="https://course-intro.netlify.app/">Read more on our blog
+                <a href="https://course-intro.netlify.app">Read more on our blog
                     <img className={styles.rightArrow} src={vector} alt=""/>
                 </a>
             </div>

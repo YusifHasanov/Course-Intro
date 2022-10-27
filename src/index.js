@@ -8,7 +8,7 @@ import {ChakraProvider,extendTheme} from "@chakra-ui/react";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const config = {
     useSystemColorMode: false,
-    initialColorMode: "dark",
+        initialColorMode: "dark",
 }
 
 

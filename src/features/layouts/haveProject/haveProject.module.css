@@ -1,0 +1,108 @@
+.projectContainer {
+    background-image: url(./../../assets/backgroundCube.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.project {
+    width: 80%;
+    padding: 20px 10px;
+    border-radius: 16px;
+    margin: 55px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(325.79deg, #6966FF 24.5%, rgba(105, 102, 255, 0.36) 117.69%);
+}
+
+.project > p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.project > h2 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.project > button {
+    margin-top: 30px;
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 12px 16px;
+    border: none;
+    color: #4D4BB1;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    transition: all .4s ease;
+}
+
+.project > button:hover {
+    background-color: #4D4BB1;
+    color: #fff;
+}
+
+.project > button > .project-arrow {
+    margin-left: 10px;
+    height: 20px;
+
+}
+
+@media screen and (min-width: 650px) {
+    .project > h2 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .project {
+        width: 80%;
+        padding: 40px 10px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .project > h2 {
+        text-align: center;
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .project > h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .project > p {
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+
+    .project > h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    .project > h2 {
+        font-size: 40px;
+    }
+
+    .project > p {
+        text-align: center;
+        font-size: 18px;
+    }
+}

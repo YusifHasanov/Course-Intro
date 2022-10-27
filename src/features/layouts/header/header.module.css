@@ -14,8 +14,8 @@
 }
 
 .header > h1 {
-    width: 60%;
-    font-size: 60px;
+    width: 95%;
+    font-size: 25px;
     font-weight: 700;
     position: relative;
     margin-top: 40px;
@@ -39,10 +39,11 @@
 }
 
 .discover, .applyGrant {
-    padding : 10px 20px;
+    padding : 7px 15px;
     border-radius: 4px;
     font-size: 15px;
     transition: all .3s ease;
+    line-height: 1.5;
 }
 
 .applyGrant {
@@ -64,11 +65,27 @@
     background-color: #29294b;
 }
 .millions   {
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
     padding: 40px calc((100% - 700px) / 2) 20px calc((100% - 700px) / 2)    ;
+
+}
+.millions > div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+}
+.millions > div >p:first-child{
+    margin-right: 25px;
+}
+.millions >div >p{
+    color: #a8b3cf;
+    font-size: 16px;
 }
 .last{
     display: flex;
@@ -87,13 +104,16 @@ align-items: center;
     align-items: center;
 }
 .text > h3{
-    font-size: 40px;
+    font-size: 33px;
     font-weight: 700;
     margin-bottom: 20px;
+    color: yellow;
 }
 .text > p {
     width: 60%;
     margin-bottom: 20px;
+    color: #a8b3cf;
+    font-size: 13px;
 }
 
 .text > a {
@@ -101,9 +121,78 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 13px;
 }
 
 .rightArrow {
     height: 20px;
     margin-left: 10px;
+}
+/*Responsive*/
+@media screen and (min-width: 400px){
+    .header > h1{
+        font-size: 30px;
+    }
+    .millions{
+        flex-direction: row;
+    }
+    .millions > div{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+@media screen and (min-width: 500px){
+    .header > h1{
+        font-size: 35px;
+    }
+    .discover, .applyGrant {
+        padding: 10px 20px;
+    }
+    .text > h3{
+        font-size: 37px;
+    }
+    .text > p{
+        font-size: 14px;
+    }
+    .text   >a{
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (min-width:600px){
+    .header > h1 {
+        font-size: 40px;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 770px){
+    .millions{
+        width: 100%;
+    }
+    .text > h3{
+        font-size: 40px;
+    }
+    .text > p{
+        font-size: 16px;
+    }
+    .text   >a{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 910px){
+    .header > h1 {
+        font-size: 50px;
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1160px){
+    .header > h1 {
+        font-size: 60px;
+    }
 }

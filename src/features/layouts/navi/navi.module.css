@@ -9,10 +9,12 @@
     z-index: 445;
     top: 0;
     box-shadow: 0 15px 10px -15px #111;
+    color: #a8b3cf;
+
 }
 
 .navRight {
-    display: flex;
+    display: none;
     align-items: center;
 
 }
@@ -43,16 +45,68 @@
 .applyBtn:hover {
     background-color: #4140ab;
 }
-.navIconDiv{
-   background-image: url(./../../assets/logoOriginal.jpg);
+
+.navIconDiv {
+    background-image: url(./../../assets/logoOriginal.jpg);
     background-size: cover;
     background-position: center;
     height: 100px;
     width: 100px;
     border-radius: 50%;
     position: absolute;
-
-    left: 80px;
+    right: 80px;
     top: 110px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.mobileNaviContainer{
+    display: block;
+    width: 100%;
+}
+.mobileNavi {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.bar{
+    font-size: 22px;color: #a8b3cf;
+}
+
+.collapseMenuList{
+    width: 100% !important;
+    padding: 0;
+    list-style-type:none ;
+    margin:0;
+    margin-top: 20px    ;
+    padding-top: 5px;
+    border-top: 2px solid rgba(168, 179, 207, .3);
+
+}
+.collapseMenuList >li{
+    padding: 5px;
+    border-radius: 6px;
+    transition: all .4s ease;
+    margin-top: 8px;
+    margin-bottom: 8px;
+   cursor: pointer;
+}
+.collapseMenuList > li > a{
+    width: 100%;
+    display: inline-block;
+}
+.collapseMenuList   > li:hover{
+    background: #2d3748;
+}
+@media screen and (min-width: 600px) {
+    .navRight {
+        display: flex;
+    }
+
+    .mobileNaviContainer {
+        display: none;
+    }
+    .navIconDiv{
+        left: 80px;
+    }
 }
