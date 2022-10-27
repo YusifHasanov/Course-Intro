@@ -135,7 +135,9 @@ align-items: center;
 }
 .manat{
     height: 15px;
-    margin-left: 5px;
+    margin-left: 0;
+    margin-right: 5px;
+
 }
 /*Responsive*/
 @media screen and (min-width: 400px){

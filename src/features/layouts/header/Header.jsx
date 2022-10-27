@@ -26,7 +26,7 @@ const Header = () => {
                     <p>Nəticə </p>
                 </div>
                 <div>
-                    <p>1000 <img src={manat} className={styles.manat} alt=""/></p>
+                    <p>1000 <img src={manat} className={styles.manat} alt=""/> +</p>
                     <p>İşlə təminat</p>
                 </div>
             </div>
