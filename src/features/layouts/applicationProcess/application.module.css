@@ -1,11 +1,17 @@
-.appProcess{
+.all {
+    width: 100%;
+}
+
+.appProcess {
     /* width: 1112px; */
     padding: 60px 0;
     margin: 0 auto;
     background-color: #1C1C28;
+
+
 }
 
-.appProcess > div:first-child{
+.appProcess > div:first-child {
     width: 100%;
     padding-left: calc((100% - 80%) / 2);
     padding-right: calc((100% - 80%) / 2);
@@ -17,17 +23,18 @@
     padding-bottom: 40px;
 }
 
-.appTitle{
+.appTitle {
     position: relative;
-    width:383px ;
+    width: 383px;
 }
-.appTitle > img{
+
+.appTitle > img {
     position: absolute;
     right: 0;
     bottom: -10px;
 }
 
-.appTitle > h2{
+.appTitle > h2 {
     font-size: 35px;
     line-height: 48px;
     font-weight: 700;
@@ -35,7 +42,7 @@
     color: #8600e2;
 }
 
-.appProcess > div:first-child > p{
+.appProcess > div:first-child > p {
     text-align: center;
     color: #a8b3cf;
     margin-top: 20px;
@@ -43,15 +50,19 @@
     line-height: 24px;
 }
 
-.appCards{
-    width: 1112px;
+.appCards {
+    width: 100%;
+    padding-left: calc((100% - 72%) / 2);
+    padding-right: calc((100% - 72%) / 2);
     margin: 0 auto;
     padding-top: 60px;
-    display: flex;
+    display: none;
     justify-content: space-around;
+
+
 }
 
-.appCards > div{
+.appCards > div {
     width: 332px;
     height: 410px;
     border-radius: 16px;
@@ -68,63 +79,188 @@
 
 }
 
-.appCards > div > h1{
+.appCards > div > h1 {
     font-size: 64px;
     color: #18ad61;;
     line-height: 80px;
 
 }
-
-.appCards > div > h3{
+.firstImageD,.secondImageD{
+    z-index: 60;
+}
+.appCards > div > h3 {
     font-size: 24px;
-    color:#ce3df3;;
+    color: #ce3df3;;
     margin-top: 15px;
 }
 
-.appCards > div > p{
+.appCards > div > p {
     color: #a8b3cf;
     font-size: 16px;
     line-height: 24px;
     margin-top: 30px;
 }
-.appCards > div:nth-child(2){
+
+.appCards > div:nth-child(2) {
     margin-top: 30px;
     transform: rotate(8deg);
 }
 
-.appCards > div:first-child > img{
+.appCards > div:first-child > img {
     position: absolute;
     right: -70px;
     top: 20px;
     z-index: 30;
 }
 
-.appCards > div:last-child > img{
+.appCards > div:nth-child(2) > img {
     position: absolute;
-    bottom: 70px;
-    left: -70px;
-    z-index: 30;
+    bottom: 80px;
+    right: -70px;
+    z-index: 50;
 }
 
-@media screen and (min-width: 680px){
-    .appTitle > h2{
-        font-size: 37px;
+.mobileCards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.mobileCards > .cardItem, .tabletItem {
+    width: 300px;
+    min-height: 300px;
+    border-radius: 16px;
+    box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 6px 6px -2px rgb(0 0 0 / 40%);
+    padding: 20px;
+    position: relative !important;
+    background-image: url(./../../assets/backgroundCube.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 4px solid #444456;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.cardItem > h1, .tabletItem > h1 {
+    font-size: 44px;
+    color: #18ad61;;
+    line-height: 50px;
+}
+
+.cardItem > h3, .tabletItem > h3 {
+    font-size: 20px;
+    color: #ce3df3;;
+    margin-top: 15px;
+}
+
+.cardItem > p, .tabletItem > p {
+    color: #a8b3cf;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 30px;
+}
+
+.firstImage {
+    z-index: 12;
+    position: absolute;
+    right: -80px;
+    bottom: -40px;
+    transform: scaleX(-1) rotate(100deg);
+}
+
+.secondImage {
+    position: absolute;
+    left: -80px;
+    bottom: -20px;
+    transform: scaleX(-1) rotate(90deg);
+    z-index: 12;
+
+}
+
+.mobileCards > .cardItem:nth-child(2) {
+    margin-top: 50px;
+
+}
+
+.mobileCards > .cardItem:last-child {
+    margin-top: 50px;
+}
+
+.TabletCards {
+    display: none;
+
+}
+
+
+@media screen and (min-width: 550px) {
+    .cardItem {
+        width: 350px;
+        min-height: 350px;
     }
-    .appProcess > div:first-child > p{
-        font-size: 16px;
+
+    .mobileCards {
+        padding-left: calc((100% - 72%) / 2);
+        padding-right: calc((100% - 72%) / 2);
     }
 }
-@media screen and (min-width: 1000px){
-    .appTitle > h2{
-        font-size: 40px;
+
+
+@media screen and (min-width: 1100px) {
+    .mobileCards {
+        display: none;
     }
-    .appProcess > div:first-child > p{
-        font-size: 18px;
+
+    .TabletCards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: calc((100% - 72%) / 2);
+        padding-right: calc((100% - 72%) / 2);
+        width: 100%;
+    }
+
+    .tabletItem {
+        width: 360px;
+    min-height: 350px ;
+    }
+    .secondImageT{
+        position: absolute;
+        left: -80px;
+        bottom: -20px;
+        transform: scaleX(-1) rotate(50deg);
+        z-index: 50;
+    }
+    .firstImageT{
+        position: absolute;
+        right: -80px;
+        top: 10px;
+        transform: scaleX(-1) rotate(180deg);
+        z-index: 50;
+    }
+
+    .TabletCards > .tabletItem:last-child {
+        margin-top: 50px;
     }
 }
-@media screen and (min-width: 1100px){
-    .appProcess >div:first-child{
-        padding-left: calc((100% - 1112px) / 2);
-        padding-right: calc((100% - 1112px) / 2);
+
+@media screen and (min-width: 1500px) {
+    .appCards {
+        display: flex;
+    }
+
+    .mobileCards {
+        display: none;
+    }
+    .TabletCards{
+        display: none;
     }
 }

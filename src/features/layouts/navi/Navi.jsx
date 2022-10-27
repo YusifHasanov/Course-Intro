@@ -22,6 +22,7 @@ const MobileNavi = () => {
         <div className={styles.mobileNaviContainer}>
             <div className={styles.mobileNavi}>
                 <IconButton onClick={MenuToggle} colorScheme={"blackAlpha"} icon={<FaBars className={styles.bar}/>}/>
+                <button className={styles.applyBtn}>Əlaqə</button>
             </div>
            <Collapse in={OpenMenu}>
                    <ul className={styles.collapseMenuList}>
@@ -30,7 +31,6 @@ const MobileNavi = () => {
                        <li><a onClick={MenuToggle} rel={"tag"} href={"#dersler"}>Dersler</a></li>
                        <li><a onClick={MenuToggle} rel={"tag"} href={"#questions"}>Suallar</a></li>
                    </ul>
-
            </Collapse>
         </div>
     )
