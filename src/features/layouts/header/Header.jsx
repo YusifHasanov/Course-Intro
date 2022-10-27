@@ -33,8 +33,8 @@ const Header = () => {
             <div className={styles.last}>
                 <img src={downArrow} alt=""/>
                 <div  className={styles.text}>
-                    <h3>Tələblərimiz</h3>
-                    <p>Kurs tələb və qaydalarına riayət etməyən tələbələr kursdan kənarlaşdırılacaqdır.</p>
+                    <h3>Tədris sahələri</h3>
+                    <p>Hər bölmə üçün tədris boyunca öyrədiləcək mövzularla aşağıdan tanış ola bilərsiz.</p>
                     <a rel={"nofollow"} href="https://course-intro.netlify.app/">
                         Haqqımızda
                         <img className={styles.rightArrow} src={vector} alt=""/>

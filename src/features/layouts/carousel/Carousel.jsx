@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styles from './carousel.module.css';
+import {Button} from "@chakra-ui/react";
 
 const carouselData = [
     {
@@ -41,7 +42,9 @@ const MyCarousel = () => {
                             ))}
                         </div>
                     </div>
-                    <div>asdasdd</div>
+                    <div>
+                        <Button colorScheme={"whiteAlpha"} color={"#a8b3cf"}>Qeydiyyat</Button>
+                    </div>
                 </div>
 
             ))}
