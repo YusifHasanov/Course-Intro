@@ -49,17 +49,17 @@ const Header = () => {
 
                           <ModalOverlay/>
                           <ModalContent  backgroundColor={"#0E1217"}>
-                              <ModalHeader style={{textAlign: 'center'}}>Cnotact us</ModalHeader>
+                              <ModalHeader style={{textAlign: 'center'}}>Əlaqə</ModalHeader>
                               <ModalCloseButton className={styles.closeButton}/>
                               <ModalBody>
                                   <form action="" onSubmit={HandleSubmit}>
                                       <FormControl isRequired>
-                                          <FormLabel>Name</FormLabel>
+                                          <FormLabel>Ad</FormLabel>
                                           <InputGroup>
                                               <InputLeftElement children={<BsPerson/>}/>
                                               <Input value={name} onChange={(e) => {
                                                   setName(e.target.value.trim())
-                                              }} type="text" name="name" placeholder="Your Name"/>
+                                              }} type="text" name="name" placeholder="Adınız"/>
                                           </InputGroup>
                                       </FormControl>
                                       <FormControl marginTop={10} isRequired>
@@ -73,12 +73,12 @@ const Header = () => {
                                                   value={email}
                                                   type="email"
                                                   name="email"
-                                                  placeholder="Your Email"
+                                                  placeholder="Email adresiniz"
                                               />
                                           </InputGroup>
                                       </FormControl>
                                       <FormControl marginTop={10} isRequired>
-                                          <FormLabel>Message</FormLabel>
+                                          <FormLabel>Mesaj</FormLabel>
 
                                           <Textarea
                                               onChange={(e) => {
@@ -86,7 +86,7 @@ const Header = () => {
                                               }}
                                               value={message}
                                               name="message"
-                                              placeholder="Your Message"
+                                              placeholder="Mesajınız"
                                               rows={6}
                                               resize="none"
                                           />
@@ -96,12 +96,12 @@ const Header = () => {
                               <ModalFooter>
                                   <Button className={styles.modalCloseButton} variant='ghost' color={"white"} mr={3}
                                           onClick={onClose}>
-                                      Close
+                                      Bağla
                                   </Button>
                                   <Button disabled={disabled} onClick={HandleSubmit} type={"submit"}
                                           className={styles.modalSubmitButton}
                                           colorScheme={"green"}
-                                  >Submit</Button>
+                                  >Təsdiqlə</Button>
                               </ModalFooter>
                           </ModalContent>
 
