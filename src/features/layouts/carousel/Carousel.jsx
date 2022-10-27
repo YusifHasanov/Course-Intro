@@ -15,7 +15,7 @@ const carouselData = [
     {
 
         title: 'Backend',
-        price: '10 ay',
+        price: '8 ay',
         content: ["C#", "MSSQL", "Entity Framework", "ASP.NET Core"]
     }, {
 

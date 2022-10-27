@@ -65,8 +65,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 370px;
-    background-color: #393953;
-
+    /*background-color: #393953;*/
     border-radius: 16px;
     transition: all .3s ease;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -107,14 +106,19 @@
 
 .subtitle {
     font-weight: 100;
+    color: yellow;
 }
 
 .text {
     margin-top: 10px;
-    color: #fff;
+    /*color: #fff;*/
+    color: #a8b3cf;
     font-weight: 700;
     font-size: 20px;
     word-spacing: -5px;
+}
+.date{
+    color: #149898;
 }
 /*Responsive*/
 @media screen and (min-width: 400px){
