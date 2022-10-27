@@ -3,12 +3,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1C1C28;
+    /*background-color: #1C1C28;*/
+    background-color: #0E1217;
     padding: 17px 30px;
     position: sticky;
     z-index: 445;
     top: 0;
-    box-shadow: 0 15px 10px -15px #111;
+    box-shadow: 0 15px 10px -15px #1b1a26;
     color: #a8b3cf;
 
 }
@@ -56,7 +57,7 @@
     border-radius: 50%;
     position: absolute;
     right: 40px;
-    top:80px;
+    top: 80px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 

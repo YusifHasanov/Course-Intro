@@ -16,7 +16,7 @@ import {AiFillGithub, AiFillInstagram} from "react-icons/ai";
 const Footer = () => {
     return (
         <Box
-            bg={useColorModeValue('gray.50', 'gray.900')}
+            bg={useColorModeValue('gray.50', '#0c0d15')}
             color={useColorModeValue('gray.700', 'gray.200')}>
             <Container
                 as={Stack}

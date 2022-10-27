@@ -58,7 +58,7 @@ const Header = () => {
                                           <InputGroup>
                                               <InputLeftElement children={<BsPerson/>}/>
                                               <Input value={name} onChange={(e) => {
-                                                  setName(e.target.value.trim())
+                                                  setName(e.target.value)
                                               }} type="text" name="name" placeholder="Adınız"/>
                                           </InputGroup>
                                       </FormControl>
@@ -68,7 +68,7 @@ const Header = () => {
                                               <InputLeftElement children={<MdOutlineEmail/>}/>
                                               <Input
                                                   onChange={(e) => {
-                                                      CheckEmail(e.target.value.trim())
+                                                      CheckEmail(e.target.value)
                                                   }}
                                                   value={email}
                                                   type="email"
