@@ -2,7 +2,7 @@ import React from 'react';
 import trace from './../../assets/Trace.png'
 import RightArrow from "./../../assets/ArrowRight.png"
 import LeftArrow from './../../assets/ArrowLeft.png'
-import styles from './application.module.css';
+import styles from './success.module.css';
 
 const DesktopCards = () => {
     return (
@@ -101,7 +101,7 @@ const Tablet = () => {
         </div>
     )
 }
-const ApplicationProcess = () => {
+const SuccessHistory = () => {
     return (
         <div className={styles.all}>
             <div className={styles.appProcess}>
@@ -123,7 +123,7 @@ const ApplicationProcess = () => {
     )
 }
 
-export default ApplicationProcess
+export default SuccessHistory
 
 
 

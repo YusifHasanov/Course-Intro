@@ -2,12 +2,12 @@ import React from 'react';
 import styles from './App.module.css'
 import Navi from "../layouts/navi/Navi";
 import Header from "../layouts/header/Header";
-import MyCarousel from "../layouts/carousel/Carousel";
-import WhatsNew from "../layouts/whats new/WhatsNew";
+import TimePrice from "../layouts/timeprice/TimePrice";
 import AskedQuestions from "../layouts/Asked Questions/AskedQuestions";
-import ApplicationProcess from "../layouts/applicationProcess/ApplicationProcess";
+import SuccessHistory from "../layouts/successhistory/SuccessHistory";
 import Footer from "../layouts/footer/Footer";
 import HaveProject from "../layouts/haveProject/HaveProject";
+import Program from "../layouts/program/Program";
 
 
 const App = () => {
@@ -17,10 +17,10 @@ const App = () => {
            <>
                <Navi/>
                <Header/>
-               <MyCarousel/>
-               <WhatsNew/>
+               <Program/>
+               <TimePrice/>
                <AskedQuestions/>
-               <ApplicationProcess/>
+               <SuccessHistory/>
                <HaveProject/>
                <Footer/>
            </>

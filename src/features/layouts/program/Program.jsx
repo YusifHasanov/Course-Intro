@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './carousel.module.css';
+import styles from './program.module.css';
 import {Button} from "@chakra-ui/react";
 
 const carouselData = [
@@ -15,7 +15,7 @@ const carouselData = [
     {
 
         title: 'Backend',
-        price: '8 ay',
+        price: '10 ay',
         content: ["C#", "MSSQL", "Entity Framework", "ASP.NET Core"]
     }, {
 
@@ -24,7 +24,7 @@ const carouselData = [
         content: ["All of the above:","Frontend", "Backend"]
     }
 ]
-const MyCarousel = () => {
+const Program = () => {
     return (
         <div className={styles.carouselContainer}>
 
@@ -43,7 +43,7 @@ const MyCarousel = () => {
                         </div>
                     </div>
                     <div>
-                        <Button colorScheme={"whiteAlpha"} color={"#a8b3cf"}>Qeydiyyat</Button>
+                        <Button className={styles.qeydiyyat} color={"#a8b3cf"}>Daha Çox</Button>
                     </div>
                 </div>
 
@@ -54,4 +54,4 @@ const MyCarousel = () => {
     );
 };
 
-export default MyCarousel;
+export default Program;

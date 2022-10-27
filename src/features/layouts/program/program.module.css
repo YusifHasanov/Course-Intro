@@ -10,32 +10,36 @@
     padding: 50px 20px;
 
 }
-.carouselContainer >.carouselItem:last-child{
+
+.carouselContainer > .carouselItem:last-child {
     margin-top: 50px;
 }
-.carouselContainer >.carouselItem:nth-child(2){
+
+.carouselContainer > .carouselItem:nth-child(2) {
     margin-top: 50px;
 }
+
 .carouselItem {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     /*background-color: rgba(0, 0, 0, 0.1);*/
-    background: linear-gradient(135deg, rgb(2 1 13 / 40%)50%,#a8b3cf 500%);
-    padding: 30px 20px 10px 20px ;
+    background: linear-gradient(135deg, rgb(2 1 13 / 40%) 50%, #a8b3cf 500%);
+    padding: 30px 20px 10px 20px;
     border-radius: 16px;
     min-height: 370px;
     margin-left: auto;
     margin-right: auto;
-    width: 370px;
+    width: 340px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transition: all .3s ease;
 
 }
-.carouselItem:hover{
+
+.carouselItem:hover {
     transform: scale(.98);
     border-radius: 20px;
-    box-shadow: 0 0 13px 1px rgba(255,255,255,0.3);
+    box-shadow: 0 0 13px 1px rgba(255, 255, 255, 0.3);
 }
 
 .subtitle {
@@ -49,46 +53,71 @@
 .title {
     font-weight: 700;
     font-size: 22px;
-    color: #7b53d7;
+    color: #fff;
     margin-bottom: 14px;
     text-align: center;
 
 }
 
 .price {
-    color: #A59EBA;
+    color: rgb(175, 74, 196);
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 10px;
 }
-.items{
-    padding-top: 8px;
+
+.items {
+    padding: 6px 0 2px 15px;
+    height: 195px;
+    border: 1px solid #A59EBA;
+    border-radius: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
 }
+
+.qeydiyyat {
+    background-color: yellow !important;
+    color: black !important;
+    border-radius: 3px !important;
+}
+
+.qeydiyyat:hover {
+    background-color: rgba(255, 255, 0, 0.5) !important;
+}
+
 .content {
+
     font-weight: 450;
     font-size: 20px;
     margin-top: 7px;
-    color: #a8b3cf  ;
-}@media screen and (min-width: 400px){
+    color: #a8b3cf;
+
+}
+
+@media screen and (min-width: 400px) {
     .carouselContainer {
         padding-right: 50px;
         padding-left: 50px;
     }
 }
-@media screen and (min-width: 570px){
-    .carouselContainer{
+
+@media screen and (min-width: 570px) {
+    .carouselContainer {
         padding-right: 100px;
         padding-left: 100px;
     }
 
 }
+
 @media screen and (min-width: 940px) {
-    .carouselContainer >.carouselItem:nth-child(2){
-        margin-top:0;
+    .carouselContainer > .carouselItem:nth-child(2) {
+        margin-top: 0;
     }
 }
-@media screen and (min-width: 1210px){
-    .carouselContainer >.carouselItem:last-child{
+
+@media screen and (min-width: 1210px) {
+    .carouselContainer > .carouselItem:last-child {
         margin-top: 0;
     }
 }

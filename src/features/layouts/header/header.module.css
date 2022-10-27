@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-position-y: 0;
 
-/*background-position: center*/
+    /*background-position: center*/
 }
 
 .header > h1 {
@@ -20,7 +20,7 @@
     position: relative;
     margin-top: 40px;
     margin-bottom: 50px;
-    color:#d74df6;
+    color: #d74df6;
 }
 
 .header > h1 > img {
@@ -39,7 +39,7 @@
 }
 
 .discover, .applyGrant {
-    padding : 7px 15px;
+    padding: 7px 15px;
     border-radius: 4px;
     font-size: 15px;
     transition: all .3s ease;
@@ -51,64 +51,76 @@
     align-items: center;
     justify-content: center;
 }
-.discover{
+
+.discover {
     background-color: #393953;
     margin-right: 25px;
 }
-.applyGrant{
+
+.applyGrant {
     background-color: #6966FF;
 }
-.applyGrant:hover{
+
+.applyGrant:hover {
     background-color: #4140ab;
 }
-.discover:hover{
+
+.discover:hover {
     background-color: #29294b;
 }
-.millions   {
+
+.millions {
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding: 40px calc((100% - 700px) / 2) 20px calc((100% - 700px) / 2)    ;
+    padding: 40px calc((100% - 700px) / 2) 20px calc((100% - 700px) / 2);
 
 }
-.millions > div{
+
+.millions > div {
     width: 80%;
     display: flex;
     align-items: center;
     padding: 15px;
     justify-content: center;
 }
-.millions > div >p:first-child{
+
+.millions > div > p:first-child {
     margin-right: 25px;
 }
-.millions >div >p{
+
+.millions > div > p {
     color: #a8b3cf;
     font-size: 16px;
 }
-.last{
-    display: flex;
-flex-direction: column;
-align-items: center;
-}
-.text{
-    background-image: url(./../../assets/whatsNewGrid.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top:35px;
-    padding-bottom:35px;
+
+.last {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.text > h3{
+
+.text {
+    background-image: url(./../../assets/whatsNewGrid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text > h3 {
     font-size: 33px;
     font-weight: 700;
     margin-bottom: 20px;
     color: yellow;
 }
+
 .text > p {
     width: 60%;
     margin-bottom: 20px;
@@ -128,26 +140,68 @@ align-items: center;
     height: 20px;
     margin-left: 10px;
 }
-.millions> div:last-child>p:first-child{
+
+.millions > div:last-child > p:first-child {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.manat{
+
+.manat {
     height: 15px;
     margin-left: 0;
     margin-right: 5px;
 
 }
+.closeButton:hover {
+    background-color: #a42020 !important;
+}
+
+.modalCloseButton {
+
+    border: none !important;
+    border-radius: 3px !important;
+}
+
+.modalCloseButton:hover {
+    background-color: #a42020 !important;
+}
+
+.modalSubmitButton {
+    border-radius: 3px !important;
+    background-color: #1c5636;
+    color: #fff;
+}
+
+.modalSubmitButton:hover {
+    background-color: #38A169;
+
+}
+
+.modalBody {
+    padding: 10px;
+
+}
+
+.modalBody > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /*Responsive*/
-@media screen and (min-width: 400px){
-    .header > h1{
+@media screen and (min-width: 400px) {
+    .header > h1 {
         font-size: 30px;
     }
-    .millions{
+
+    .millions {
         flex-direction: row;
     }
-    .millions > div{
+
+    .millions > div {
         display: block;
         width: 100%;
         padding: 0;
@@ -155,54 +209,62 @@ align-items: center;
 }
 
 
-@media screen and (min-width: 500px){
-    .header > h1{
+@media screen and (min-width: 500px) {
+    .header > h1 {
         font-size: 35px;
     }
+
     .discover, .applyGrant {
         padding: 10px 20px;
     }
-    .text > h3{
+
+    .text > h3 {
         font-size: 37px;
     }
-    .text > p{
+
+    .text > p {
         font-size: 14px;
     }
-    .text   >a{
+
+    .text > a {
         font-size: 14px;
     }
 }
 
 
-
-@media screen and (min-width:600px){
+@media screen and (min-width: 600px) {
     .header > h1 {
         font-size: 40px;
         width: 75%;
     }
 }
 
-@media screen and (min-width: 770px){
-    .millions{
+@media screen and (min-width: 770px) {
+    .millions {
         width: 100%;
     }
-    .text > h3{
+
+    .text > h3 {
         font-size: 40px;
     }
-    .text > p{
+
+    .text > p {
         font-size: 16px;
     }
-    .text   >a{
+
+    .text > a {
         font-size: 16px;
     }
 }
-@media screen and (min-width: 910px){
+
+@media screen and (min-width: 910px) {
     .header > h1 {
         font-size: 50px;
         width: 60%;
     }
 }
-@media screen and (min-width: 1160px){
+
+@media screen and (min-width: 1160px) {
     .header > h1 {
         font-size: 60px;
     }

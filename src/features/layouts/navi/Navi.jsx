@@ -3,13 +3,22 @@ import styles from './navi.module.css';
 import {FaBars} from "react-icons/fa";
 import {Collapse, IconButton, useDisclosure} from "@chakra-ui/react";
 
+//
+// const hrefRenderingObj = {
+//     header: 'header',
+//     teleblerimiz: 'teleblerimiz',
+//     dersler: 'dersler',
+//     questions: 'questions'
+// }
+
+
 const DesktopNavi = () => {
     return (
         <div className={styles.navRight}>
             <ul className={styles.navList}>
-                <li><a rel={"tag"} href={"#header"}>Ana shifə</a></li>
-                <li><a rel={"tag"} href={"#teleblerimiz"}>Tələblər</a></li>
-                <li><a rel={"tag"} href={"#dersler"}>Dersler</a></li>
+                <li><a rel={"tag"} href={"#header"}>Ana səhifə</a></li>
+                <li><a rel={"tag"} href={"#teleblerimiz"}>Proqram</a></li>
+                <li><a rel={"tag"} href={"#dersler"}>Dərslər</a></li>
                 <li><a rel={"tag"} href={"#questions"}>Suallar</a></li>
             </ul>
             <button className={styles.applyBtn}>Əlaqə</button>

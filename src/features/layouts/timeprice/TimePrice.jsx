@@ -1,36 +1,36 @@
 import React from 'react';
-import styles from './whatsNew.module.css';
+import styles from './timeprice.module.css';
 import grid from './../../assets/whatsNewGrid.png'
 import vector from './../../assets/vector.png'
 import manat from './../../assets/manat.png'
+import {Button} from "@chakra-ui/react";
 const courses = [
     {
         title: "Front-end",
         subtitle: "10 ay",
         text: ["Front-end - 300"],
-        date: "Tezliklə..."
     },
     {
         title: "Back-end",
-        subtitle: "8 ay",
+        subtitle: "10 ay",
         text: ["Back-end - 400"],
-        date: "Tezliklə..."
+
     },
     {
         title: "Full-stack",
         subtitle: "18 ay",
         text: [
             `Front-end - 300`, `Back-end - 350`
-        ],
-        date: "Tezliklə..."
+        ]
     }
 ]
 
-const WhatsNew = () => {
+const TimePrice = () => {
+
     return (
         <div className={styles.whatsNew} id={"dersler"}>
             <div className={styles.header} style={{backgroundImage: grid}}>
-                <h3>Tədris müddəti</h3>
+                <h3>Tədris müddəti və qiymət</h3>
                 <p>
                     Web proqramlaştırmanın hər sahəsi üzrlə yüksək keyfiyyətli və iş zəmanətli dərslər.
                 </p>
@@ -51,7 +51,10 @@ const WhatsNew = () => {
                                     <p className={styles.text}>{course.text.map((t,index) => (<div className={styles.price} key={index}> {t}
                                         <img className={styles.manat} src={manat} alt="manat"/> </div>))}</p>
                                 </div>
-                                <div className={styles.date}>{course.date}</div>
+
+                             <div className={styles.qeydiyyat}>
+                                 <Button >Qeydiyyat</Button>
+                             </div>
                             </div>
                         </div>
                     ))}
@@ -61,4 +64,4 @@ const WhatsNew = () => {
     );
 };
 
-export default WhatsNew;
+export default TimePrice;
