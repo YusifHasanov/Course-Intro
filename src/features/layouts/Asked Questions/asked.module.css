@@ -1,10 +1,11 @@
-.askedQuestions{
+.askedQuestions {
     width: 100%;
     padding-left: calc((100% - 1000px) / 2);
     padding-right: calc((100% - 1000px) / 2);
     padding-top: 100px;
 }
-.title{
+
+.title {
     background-image: url(./../../assets/whatsNewGrid.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,45 +15,53 @@
     text-align: center;
 
 }
-.title > h4{
+
+.title > h4 {
     font-size: 30px;
     font-weight: 700;
-    color:#5654E1;
+    color: #5654E1;
     margin-bottom: 30px;
 }
-.subtitle{
-    width: 80%  ;
+
+.subtitle {
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     color: #a8b3cf;
 }
-.questions{
-    width: 80%  ;
+
+.questions {
+    width: 80%;
     padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
-.question{
-    display:flex;
+
+.question {
+    display: flex;
     align-items: center;
     justify-content: space-between;
- border-top: 1px solid #393953;
+    border-top: 1px solid #393953;
     padding: 20px 0;
 }
-.plus{
+
+.plus {
     font-size: 28px;
     cursor: pointer;
     transition: all .5s ease;
 }
-.plus:hover{
+
+.plus:hover {
     transform: rotate(90deg);
 }
-.collapse{
-    padding: 5px 0 15px  0;
+
+.collapse {
+    padding: 5px 0 15px 0;
     font-size: 15px;
     opacity: .7;
 }
-.questions:last-child{
+
+.questions:last-child {
     border-bottom: 1px solid #393953;
 
 }

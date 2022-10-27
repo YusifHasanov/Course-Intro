@@ -48,7 +48,7 @@ const WhatsNew = () => {
                             <div className={styles.boxContent}>
                                 <div>
                                     <p className={styles.subtitle}>{course.subtitle}</p>
-                                    <p className={styles.text}>{course.text.map((t,index) => (<div key={index}> {t} <br/></div>))}</p>
+                                    <p className={styles.text}>{course.text.map((t,index) => (<div style={{width:"100%"}} key={index}> {t} </div>))}</p>
                                 </div>
                                 <div className={styles.date}>{course.date}</div>
                             </div>
