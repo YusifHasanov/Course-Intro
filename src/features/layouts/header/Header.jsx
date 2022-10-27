@@ -26,7 +26,7 @@ const Header = () => {
                     <p>Nəticə </p>
                 </div>
                 <div>
-                    <p>1000&#x20BC; +</p>
+                    <p>1000&#8380; +</p>
                     <p>İşlə təminat</p>
                 </div>
             </div>

@@ -7,20 +7,20 @@ const courses = [
     {
         title: "Front-end",
         subtitle: "10 ay",
-        text: ["Front-end - 300 ₼"],
+        text: ["Front-end - 300"],
         date: "Tezliklə..."
     },
     {
         title: "Back-end",
         subtitle: "8 ay",
-        text: ["Back-end - 400 ₼"],
+        text: ["Back-end - 400"],
         date: "Tezliklə..."
     },
     {
         title: "Full-stack",
         subtitle: "18 ay",
         text: [
-            `Front-end - 300 ₼`, `Back-end - 350 ₼`
+            `Front-end - 300`, `Back-end - 350`
         ],
         date: "Tezliklə..."
     }
@@ -48,7 +48,7 @@ const WhatsNew = () => {
                             <div className={styles.boxContent}>
                                 <div>
                                     <p className={styles.subtitle}>{course.subtitle}</p>
-                                    <p className={styles.text}>{course.text.map((t,index) => (<div style={{width:"100%"}} key={index}> {t} </div>))}</p>
+                                    <p className={styles.text}>{course.text.map((t,index) => (<div style={{width:"100%"}} key={index}> {t} &#8380;</div>))}</p>
                                 </div>
                                 <div className={styles.date}>{course.date}</div>
                             </div>
