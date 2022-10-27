@@ -4,7 +4,7 @@ import headerLine from './../../assets/headerLine.png'
 import downArrow from './../../assets/downArrow.png';
 import {BsArrowRight} from "react-icons/bs";
 import vector from "../../assets/vector.png";
-
+import manat from './../../assets/manat.png'
 const Header = () => {
 
     return (
@@ -26,7 +26,7 @@ const Header = () => {
                     <p>Nəticə </p>
                 </div>
                 <div>
-                    <p>1000&#8380; +</p>
+                    <p>1000 <img src={manat} className={styles.manat} alt=""/></p>
                     <p>İşlə təminat</p>
                 </div>
             </div>

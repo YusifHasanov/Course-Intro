@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './whatsNew.module.css';
 import grid from './../../assets/whatsNewGrid.png'
 import vector from './../../assets/vector.png'
-
+import manat from './../../assets/manat.png'
 const courses = [
     {
         title: "Front-end",
@@ -48,7 +48,8 @@ const WhatsNew = () => {
                             <div className={styles.boxContent}>
                                 <div>
                                     <p className={styles.subtitle}>{course.subtitle}</p>
-                                    <p className={styles.text}>{course.text.map((t,index) => (<div style={{width:"100%"}} key={index}> {t} &#8380;</div>))}</p>
+                                    <p className={styles.text}>{course.text.map((t,index) => (<div className={styles.price} key={index}> {t}
+                                        <img className={styles.manat} src={manat} alt="manat"/> </div>))}</p>
                                 </div>
                                 <div className={styles.date}>{course.date}</div>
                             </div>

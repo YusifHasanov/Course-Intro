@@ -120,6 +120,17 @@
 .date{
     color: #149898;
 }
+.price{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.manat{
+    height: 18px;
+    display: inline-block;
+    margin-left: 5px;
+
+}
 /*Responsive*/
 @media screen and (min-width: 400px){
     .boxes > .content {
