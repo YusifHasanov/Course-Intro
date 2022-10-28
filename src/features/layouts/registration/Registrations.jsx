@@ -3,10 +3,12 @@ import styles from './registration.module.css';
 import Go from "../../../GlobalRouting";
 import {useNavigate, useParams} from "react-router-dom";
 import {
+
     Box,
     FormControl,
     FormLabel,
     Input,
+    InputAddon,
     Stack,
     Button, Select,
 } from '@chakra-ui/react';
