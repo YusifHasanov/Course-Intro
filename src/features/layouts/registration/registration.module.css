@@ -83,6 +83,21 @@ font-size: 18px!important;
 .submitButton:active{
     transform: scale(.9);
 }
+
+.priceBox{
+    padding: 15px ;
+    border: 1px solid #383d47;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+.price{
+  color: #8bae8b;
+    font-weight: 700;
+
+}
+
+
+
 @media screen and (min-width: 540px){
     .header  >h1{
         font-size: 30px;
