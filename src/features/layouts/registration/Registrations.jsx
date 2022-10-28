@@ -35,7 +35,7 @@ const Registration = () => {
             return;
         }
 
-    }, [])
+    }, [department])
     useEffect(()=>{
         if(departmentName==="Frontend"){
             setPrice("300 AZN")
