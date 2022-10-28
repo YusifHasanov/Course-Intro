@@ -4,16 +4,20 @@ import grid from './../../assets/whatsNewGrid.png'
 import vector from './../../assets/vector.png'
 import manat from './../../assets/manat.png'
 import {Button} from "@chakra-ui/react";
+import Go from "../../../GlobalRouting";
+import {useNavigate} from "react-router-dom";
 const courses = [
     {
         title: "Front-end",
         subtitle: "10 ay",
         text: ["Front-end - 300"],
+        path: "frontend"
     },
     {
         title: "Back-end",
         subtitle: "10 ay",
         text: ["Back-end - 400"],
+        path: "backend"
 
     },
     {
@@ -21,12 +25,13 @@ const courses = [
         subtitle: "18 ay",
         text: [
             `Front-end - 300`, `Back-end - 350`
-        ]
+        ],
+        path: "fullstack"
     }
 ]
 
 const TimePrice = () => {
-
+const navigate=useNavigate();
     return (
         <div className={styles.whatsNew} id={"dersler"}>
             <div className={styles.header} style={{backgroundImage: grid}}>
@@ -53,7 +58,7 @@ const TimePrice = () => {
                                 </div>
 
                              <div className={styles.qeydiyyat}>
-                                 <Button >Qeydiyyat</Button>
+                                 <Button onClick={()=>{Go.to(navigate,`/registration/${course.path}`)}}>Qeydiyyat</Button>
                              </div>
                             </div>
                         </div>

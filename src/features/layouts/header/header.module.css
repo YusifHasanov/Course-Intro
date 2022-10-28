@@ -158,7 +158,7 @@
 }
 
 .modalCloseButton {
-
+background-color: rgba(147, 42, 42, 0.5) !important;
     border: none !important;
     border-radius: 3px !important;
 }
@@ -169,12 +169,12 @@
 
 .modalSubmitButton {
     border-radius: 3px !important;
-    background-color: #1c5636;
+    background-color: #1c5636 !important;
     color: #fff;
 }
 
 .modalSubmitButton:hover {
-    background-color: #38A169;
+    background-color: #38A169 !important;
 
 }
 

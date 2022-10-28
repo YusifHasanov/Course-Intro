@@ -24,7 +24,7 @@ const Header = () => {
         const [email, setEmail] = useState('')
         const [message, setMessage] = useState('')
         const [error, setError] = useState(false);
-        const disabled = [name, email, message].includes('') || error;
+        const disabled = [name, email, message].some(i=>i.trim()==="") || error;
 
         const HandleSubmit = (e) => {
             onClose();
@@ -82,7 +82,7 @@ const Header = () => {
 
                                           <Textarea
                                               onChange={(e) => {
-                                                  setMessage(e.target.value.trim())
+                                                  setMessage(e.target.value)
                                               }}
                                               value={message}
                                               name="message"

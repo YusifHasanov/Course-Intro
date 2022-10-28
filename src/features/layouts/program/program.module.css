@@ -25,9 +25,9 @@
     justify-content: space-between;
     /*background-color: rgba(0, 0, 0, 0.1);*/
     background: linear-gradient(135deg, rgb(2 1 13 / 40%) 50%, #a8b3cf 500%);
-    padding: 30px 20px 10px 20px;
+    padding: 30px 20px 20px 20px;
     border-radius: 16px;
-    min-height: 370px;
+    min-height: 420px;
     margin-left: auto;
     margin-right: auto;
     width: 340px;
@@ -71,7 +71,7 @@
     height: 195px;
     border: 1px solid #A59EBA;
     border-radius: 8px;
-    margin-top: 3px;
+    margin-top: 35px;
     margin-bottom: 3px;
 
 }

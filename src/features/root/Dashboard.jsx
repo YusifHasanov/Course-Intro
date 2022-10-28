@@ -9,6 +9,7 @@ import Footer from "../layouts/footer/Footer";
 import HaveProject from "../layouts/haveProject/HaveProject";
 import Program from "../layouts/program/Program";
 import {Routes,Route} from "react-router-dom";
+import Registration from "../layouts/registration/Registrations";
 
 const DashBoard = () => {
     return (
@@ -26,6 +27,7 @@ const DashBoard = () => {
                       <Footer/>
                   </>
               }/>
+               <Route path={"/registration/:department"} element={<Registration/>}/>
            </Routes>
         </div>
     );
