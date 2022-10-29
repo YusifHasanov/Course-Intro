@@ -5,7 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    padding: 30px calc((100vw - 940px) / 2) 40px;
+    padding: 40px calc((100vw - 940px) / 2) 40px;
 }
 
 .content {
