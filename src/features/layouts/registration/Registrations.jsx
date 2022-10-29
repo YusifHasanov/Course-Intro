@@ -56,7 +56,7 @@ const Registration = () => {
                     <Button onClick={() => {
                         Go.back(navigate)
                     }} className={styles.backButton}>Back</Button>
-                    <h1>Axtarlan proqramçı ol</h1>
+                    <h1>Axtarılan proqramçı ol</h1>
                     <div></div>
                 </div>
                 <div className={styles.formContainer}>
