@@ -8,7 +8,7 @@ import {
     FormControl,
     FormLabel,
     Input,
-    InputAddon,
+
     Stack,
     Button, Select,
 } from '@chakra-ui/react';
@@ -88,7 +88,7 @@ const Registration = () => {
                                 }} type="email"/>
                             </FormControl>
                             {/*Bolme*/}
-                            <FormControl className={styles.formControl}>
+                            <FormControl  className={styles.formControl}>
                                 <FormLabel
                                     htmlFor={"department"}>
                                     Bölmə
