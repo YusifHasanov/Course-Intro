@@ -41,13 +41,17 @@ const Registration = () => {
     useEffect(()=>{
         if(departmentName==="Frontend"){
             setPrice("300 AZN")
+            return;
         }
         if(departmentName==="Backend"){
             setPrice("400 AZN")
+        return;
         }
         if(departmentName==="Full-stack"){
             setPrice("Frontend 300 AZN və   Backend 350 AZN")
+        return;
         }
+        setPrice("---")
     },[departmentName])
     return (
         <div className={styles.registration}>
@@ -74,7 +78,7 @@ const Registration = () => {
                                 }} type="text"/>
                             </FormControl>
                             {/*Soyad*/}
-                            <FormControl className={styles.formControl} id="lastName">
+                            <FormControl className={styles.formControl} id="lastName" isRequired>
                                 <FormLabel>Soyad</FormLabel>
                                 <Input value={surname} onChange={(e) => {
                                     setSurname(e.target.value)
