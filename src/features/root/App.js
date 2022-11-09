@@ -2,10 +2,9 @@ import React, {useEffect, useState} from 'react';
 import { useSelector } from 'react-redux';
 import styles from './App.module.css'
 import Dashboard from "./Dashboard";
-import{selectAllRegisters} from "./../redux/slices/RegisterSlice";
 
 const App = () => {
-    const data=useSelector(selectAllRegisters); 
+
     // const [departments, setDepartments] = useState([]);
     // const departmentCollection = collection(db, "Departments");
     //
@@ -18,9 +17,9 @@ const App = () => {
     //     getDepartments().then(r => console.log(r));
     // }, [])
 
-// useEffect(() => {
-//     console.log(data);
-// },[data])
+
+
+
     return (
         <div className={styles.appContainer}>
             <Dashboard/>

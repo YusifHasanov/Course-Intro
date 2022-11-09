@@ -6,9 +6,14 @@ import {Box, Button, FormControl, FormLabel, Input, Select, Stack,} from '@chakr
 import Regex from '../../../Regex';
 import {addDoc, collection} from "firebase/firestore";
 import {db} from "../../../Firebase.config.js";
+import {useDispatch, useSelector} from "react-redux";
+import {selectAllRegisters} from "../../redux/slices/RegisterSlice";
+import {nanoid} from "@reduxjs/toolkit";
+
+
 
 const Registration = () => {
-
+    const allExistUses = useSelector(selectAllRegisters);
     const navigate = useNavigate();
     const {department} = useParams();
     const [name, setName] = useState("");
@@ -19,20 +24,29 @@ const Registration = () => {
 
     const isDisabled = name !== "" && surname !== "" && Regex.email(email) && departmentName !== "" && price !== "0";
     const registrationCollection = collection(db, "Registrations");
+    const dispatch = useDispatch();
 
+    const notify = () => toast("Wow so easy!");
     const submitHandle = (e) => {
+        e.preventDefault();
         const data = {
-            Name:name,
-            Surname:surname,
-            Email:email,
-            DepartmentName:departmentName,
-            Date:new Date().toISOString() ,
+            id:nanoid(),
+            Name: name,
+            Surname: surname,
+            Email: email,
+            DepartmentName: departmentName,
+            Date: new Date().toISOString(),
         }
+        // const isExist = !!allExistUses.find((item) => item.Email === email);
+        // if (!isExist) {
+        //
+        //
+        //
+        //     return;
+        // }
 
         const send = async (data) => await addDoc(registrationCollection, data);
-        send(data).then(r => console.log(r)).catch(e => console.log(e))
-
-        e.preventDefault();
+        send(data).then(r => console.log(r)).catch(e => console.log(e));
     }
 
     useEffect(() => setDepartmentName(department), [department])
