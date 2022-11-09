@@ -11,13 +11,13 @@ const courses = [
         title: "Front-end",
         subtitle: "10 ay",
         text: ["Front-end - 300"],
-        path: "frontend"
+        path: "Frontend"
     },
     {
         title: "Back-end",
         subtitle: "10 ay",
         text: ["Back-end - 400"],
-        path: "backend"
+        path: "Backend"
 
     },
     {
@@ -26,7 +26,7 @@ const courses = [
         text: [
             `Front-end - 300`, `Back-end - 350`
         ],
-        path: "fullstack"
+        path: "Full-stack"
     }
 ]
 

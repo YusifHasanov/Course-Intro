@@ -5,6 +5,7 @@ import Modal from "../../components/MessageModal/Modal";
 
 const HaveProject = () => {
     const [isClicked, setIsClicked] = useState(false);
+
     return (
         <div>
             {isClicked && <Modal changeShow={()=>{setIsClicked(false)}} show={isClicked}/>}
