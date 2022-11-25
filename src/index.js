@@ -7,7 +7,7 @@ import {ChakraProvider, extendTheme} from "@chakra-ui/react";
 import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
 import store from "./app/Store";
-import {extendedRegisterSlice} from "./features/redux/slices/RegisterSlice";
+import {extendedUserSlice} from "./features/redux/slices/UserSlice";
 
 
 const Root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,7 +17,7 @@ const config = {
     initialColorMode: "dark",
 }
 const customTheme = extendTheme({config})
-store.dispatch(extendedRegisterSlice.endpoints.getRegister.initiate());
+store.dispatch(extendedUserSlice.endpoints.getUsers.initiate());
 Root.render(
  <Provider store={store}>
      <ChakraProvider theme={customTheme}>

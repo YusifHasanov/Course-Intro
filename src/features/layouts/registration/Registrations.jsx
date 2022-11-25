@@ -4,29 +4,26 @@ import Go from "../../../GlobalRouting";
 import {useNavigate, useParams} from "react-router-dom";
 import {Box, Button, FormControl, FormLabel, Input, Select, Stack,} from '@chakra-ui/react';
 import Regex from '../../../Regex';
-import {addDoc, collection} from "firebase/firestore";
-import {db} from "../../../Firebase.config.js";
-import {useDispatch, useSelector} from "react-redux";
-import {selectAllRegisters} from "../../redux/slices/RegisterSlice";
+import {useSelector} from "react-redux";
+import {selectAllUsers, useAddUserMutation} from "../../redux/slices/UserSlice";
 import {nanoid} from "@reduxjs/toolkit";
 
 
 
 const Registration = () => {
-    const allExistUses = useSelector(selectAllRegisters);
+    const allUsers = useSelector(selectAllUsers);
     const navigate = useNavigate();
     const {department} = useParams();
+    const [exist, setExist] = useState(false);
     const [name, setName] = useState("");
     const [surname, setSurname] = useState("");
     const [email, setEmail] = useState("");
     const [departmentName, setDepartmentName] = useState("");
     const [price, setPrice] = useState("0");
-
+    const [addUser]=useAddUserMutation();
     const isDisabled = name !== "" && surname !== "" && Regex.email(email) && departmentName !== "" && price !== "0";
-    const registrationCollection = collection(db, "Registrations");
-    const dispatch = useDispatch();
 
-    const notify = () => toast("Wow so easy!");
+
     const submitHandle = (e) => {
         e.preventDefault();
         const data = {
@@ -37,18 +34,16 @@ const Registration = () => {
             DepartmentName: departmentName,
             Date: new Date().toISOString(),
         }
-        // const isExist = !!allExistUses.find((item) => item.Email === email);
-        // if (!isExist) {
-        //
-        //
-        //
-        //     return;
-        // }
-
-        const send = async (data) => await addDoc(registrationCollection, data);
-        send(data).then(r => console.log(r)).catch(e => console.log(e));
+        if (exist) {
+            addUser(data);
+            alert("User added");
+            return
+        }
+            alert("Bu email adresi ile daha önce kayıt yapılmıştır.")
     }
-
+    useEffect(() => {
+        setExist(Boolean(allUsers.find(user => user.Email === email)));
+    }, [email]);
     useEffect(() => setDepartmentName(department), [department])
 
     useEffect(() => {
