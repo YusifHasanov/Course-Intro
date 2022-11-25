@@ -34,7 +34,7 @@ const Registration = () => {
             DepartmentName: departmentName,
             Date: new Date().toISOString(),
         }
-        if (exist) {
+        if (!exist) {
             addUser(data);
             alert("User added");
             return

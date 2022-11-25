@@ -50,13 +50,14 @@ const Navi = () => {
     const [isClicked, setIsClicked] = useState(false);
     return (
         <div id={"nav"} className={styles.navContainer}>
-
+            {isClicked && <Modal changeShow={()=>{setIsClicked(false)}} show={isClicked}/>}
             <div className={styles.navIconDiv}>
             </div>
             <div></div>
+
             <DesktopNavi isClicked={isClicked} setIsClicked={setIsClicked}/>
             <MobileNavi isClicked={isClicked} setIsClicked={setIsClicked}/>
-            {isClicked && <Modal changeShow={()=>{setIsClicked(false)}} show={isClicked}/>}
+
         </div>
     );
 };
