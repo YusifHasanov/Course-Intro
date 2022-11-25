@@ -43,13 +43,11 @@ const Registration = () => {
     }
     useEffect(() => {
         setExist(Boolean(allUsers.find(user => user.Email === email)));
-    }, [email]);
+    }, [email,allUsers]);
     useEffect(() => setDepartmentName(department), [department])
 
     useEffect(() => {
         setPrice(departmentName === "Frontend" ? "300 AZN" : departmentName === "Backend" ? "400 AZN" : departmentName === "Full-stack" ? "Frontend: 300 & Backend: 350 AZN" : "0")
-
-
     }, [departmentName])
 
 
@@ -74,28 +72,28 @@ const Registration = () => {
 
                                 {/*Ad*/}
                                 <FormControl className={styles.formControl} id="firstName" isRequired>
-                                    <FormLabel>Ad</FormLabel>
+                                    <FormLabel color={"#fff"}>Ad</FormLabel>
                                     <Input value={name} onChange={(e) => {
                                         setName(e.target.value)
                                     }} type="text"/>
                                 </FormControl>
                                 {/*Soyad*/}
                                 <FormControl className={styles.formControl} id="lastName" isRequired>
-                                    <FormLabel>Soyad</FormLabel>
+                                    <FormLabel color={"#fff"}>Soyad</FormLabel>
                                     <Input value={surname} onChange={(e) => {
                                         setSurname(e.target.value)
                                     }} type="text"/>
                                 </FormControl>
                                 {/*Email*/}
                                 <FormControl className={styles.formControl} id="email" isRequired>
-                                    <FormLabel>Email</FormLabel>
+                                    <FormLabel color={"#fff"}>Email</FormLabel>
                                     <Input value={email} onChange={(e) => {
                                         setEmail(e.target.value)
                                     }} type="email"/>
                                 </FormControl>
                                 {/*Bolme*/}
                                 <FormControl className={styles.formControl}>
-                                    <FormLabel
+                                    <FormLabel color={"#fff"}
                                         htmlFor={"department"}>
                                         Bölmə
                                     </FormLabel>

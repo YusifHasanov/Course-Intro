@@ -28,9 +28,7 @@ import {AiOutlineClose} from "react-icons/ai";
         setError(!Regex.email(value));
 
     };
-useEffect(()=>{
-    console.log("ADsaddada")
-})
+
     return (
      <div className={styles.modalContainer}>
              <div  className={styles.modal}>
