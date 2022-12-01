@@ -19,6 +19,7 @@ export const FireStore = {
                 });
                 return {data: {ids: ids, entities: responseData}};
             }
+            return {data: {ids: [], entities: {}}};
         } catch (e) {
             console.log(e);
         }
@@ -32,20 +33,18 @@ export const FireStore = {
             console.log(e);
         }
     },
-    update: async (collectionName, id, data) => {
+    update: async (collectionName, data) => {
         try {
-            const docRef = collection(db, collectionName);
-            const response = await updateDoc(docRef, data);
-            return response;
+            await updateDoc(doc(db, collectionName, data.id), data);
+            return await data;
         } catch (e) {
             console.log(e);
         }
     },
-    delete: async (collectionName, id) => {
+    delete: async (collectionName, data) => {
         try {
-            const docRef = collection(db, collectionName,id);
-            const response = await deleteDoc(docRef);
-            return response;
+            await deleteDoc(doc(db, "Todos", data.id));
+            return await data;
         } catch (e) {
             console.log(e);
         }
